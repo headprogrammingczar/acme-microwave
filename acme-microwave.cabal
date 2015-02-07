@@ -2,7 +2,7 @@
 -- documentation, see http://haskell.org/cabal/users-guide/
 
 name:                acme-microwave
-version:             0.1.0.0
+version:             0.1.0.2
 synopsis:            The eighth wonder of the world, kitchen math!
 description:         Have you ever wondered why, when using a microwave, pressing "60" is the same as pressing "100"? Well wonder no longer! I, through epic trials and hardships, have tamed the vexacious wiles of that most enigmatic appliance.
 license:             BSD3
@@ -16,5 +16,4 @@ cabal-version:       >=1.8
 
 library
   exposed-modules:     Data.Microwave
-  -- other-modules:       
-  build-depends:       base ==4.5.*
+  build-depends:       base >=4.0.0, base < 5.0.0

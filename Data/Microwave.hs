@@ -47,8 +47,8 @@ instance Enum Microwave where
 
 instance Num Microwave where
   fromInteger = fixSecs
-  n + m = Microwave (normalize n + normalize m)
-  n * m = Microwave (normalize n * normalize m)
+  n + m = denormalize (normalize n + normalize m)
+  n * m = denormalize (normalize n * normalize m)
   abs = Microwave . abs . fromMicrowave
   signum = Microwave . signum . fromMicrowave
 
